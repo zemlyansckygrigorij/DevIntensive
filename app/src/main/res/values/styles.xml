@@ -3,9 +3,43 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/color_primary</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark</item>
+        <item name="colorAccent">@color/color_accent</item>
     </style>
-
+    <style name="textItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="editTextItem">
+        <item name="android:focusable">false</item>
+        <item name="android:enabled">false</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textColorHint">@color/color_grey</item>
+    </style>
+    <style name="icon">
+        <item name="android:layout_width">@dimen/size_small_24</item>
+        <item name="android:layout_height">@dimen/size_small_24</item>
+    </style>
+    <style name="icon.Left" parent="icon">
+        <item name="android:layout_gravity">top|left</item>
+        <item name="android:layout_marginTop">@dimen/Spacing_medial_24</item>
+        <item name="android:layout_marginLeft">@dimen/Spacing_medial_24</item>
+    </style>
+    <style name="icon.Right" parent="icon">
+        <item name="android:layout_gravity">top|right</item>
+        <item name="android:layout_marginTop">@dimen/Spacing_medial_24</item>
+        <item name="android:layout_marginRight">@dimen/Spacing_medium_32</item>
+    </style>
+    <style name="mainLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/Spacing_larger_72</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/Spacing_medium_32</item>
+        <item name="android:layout_marginRight">@dimen/Spacing_normal_16</item>
+    </style>
 </resources>

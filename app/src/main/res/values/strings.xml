@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Землянский Григорий</string>
+    <string name="email">zemlyanscky.grigorij@yandex.ru</string>
+    <string name="MyPhone">89514700303</string>
+    <string name="vk">https://vk.com/id23721588</string>
+    <string name="Github">https://github.com/zemlyansckygrigorij/DevIntensive</string>
+    <string name="information">Хочу много денег, работу не предлагать</string>
 </resources>
