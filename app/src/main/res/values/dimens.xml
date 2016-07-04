@@ -16,4 +16,7 @@
     <dimen name="Spacing_medium_32">32dp</dimen>
     <dimen name="Spacing_large_56">56dp</dimen>
     <dimen name="Spacing_larger_72">72dp</dimen>
+    <dimen name="Line_height">2dp</dimen>
+    <dimen name="Profile_image_size">256dp</dimen>
+    <dimen name="Fab_right_space">8dp</dimen>
 </resources>
