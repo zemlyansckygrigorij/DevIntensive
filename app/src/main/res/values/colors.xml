@@ -7,4 +7,26 @@
     <color name="color_grey">#D8D8D8</color>
     <color name="color_">#000000</color>
     <color name="color_white">#FDFEFE</color>
+
+    <color name="color_red">#ed0000</color>
+    <color name="color_green">#00c853</color>
+    <color name="color_blue">#2962ff</color>
+    <color name="color_pink">#e91e63</color>
+    <color name="color_red_auth">#e44c42</color>
+
+    <!--blue scale-->
+    <color name="color_indigo">#304ffe</color>
+    <color name="color_cyan">#00cdcd</color>
+    <color name="color_ultramarine">#180dc1</color>
+    <color name="color_ultramarine_dark">#150d9c</color>
+
+    <!--gray scale-->
+    <color name="color_gray">#9c9c9c</color>
+    <color name="color_gray_light">#a3a3a3</color>
+    <color name="color_gray_dark">#6b6b6b</color>
+    <color name="color_gray_background">#454545</color>
+    <color name="color_black">#000000</color>
+
+    <color name="color_orange_dark">#f2594a</color>
+
 </resources>

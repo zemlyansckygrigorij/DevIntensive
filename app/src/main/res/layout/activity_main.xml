@@ -1,366 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v4.widget.DrawerLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activities.MainActivity"    >
-
-       <android.support.design.widget.CoordinatorLayout
-           xmlns:android="http://schemas.android.com/apk/res/android"
-           xmlns:app="http://schemas.android.com/apk/res-auto"
-           xmlns:tools="http://schemas.android.com/tools"
-           android:id="@+id/navigation_drawer"
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           tools:context=".ui.activities.MainActivity"    >
-
-
-           <android.support.design.widget.CoordinatorLayout
-               android:id="@+id/coordination_container"
-               android:layout_width="match_parent"
-              android:layout_height="wrap_content">
-
-
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar_layout"
-        android:theme="@style/AppTheme.AppBarOverlay"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/color_primary">
-
-        <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/collapsing"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:contentScrim="@color/color_primary"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
-
-
-            <ImageView
-                android:id="@+id/user_photo_img"
-                android:layout_width="match_parent"
-                android:layout_height="256dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/user_foto"
-                android:fitsSystemWindows="true"/>
-            <android.support.v7.widget.Toolbar
-                android:theme="@style/AppTheme.PopupOverlay"
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:titleTextColor="@color/color_white"
-                app:layout_collapseMode="pin"
-                android:layout_marginTop="16dp"/>
-        </android.support.design.widget.CollapsingToolbarLayout>
-
-    </android.support.design.widget.AppBarLayout>
-
-
-               <android.support.v4.widget.NestedScrollView
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"
-                   app:layout_behavior="@string/appbar_scrolling_view_behavior">
-<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="ui.activities.MainActivity"
+    android:fitsSystemWindows="true">
 
-    android:orientation="vertical"
-    tools:context="com.example.myapplication.MainActivity">
-
-
-
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar_layout_TotalBar"
-        android:theme="@style/AppTheme.AppBarOverlay"
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/main_coordinator_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="10dp"
-        android:layout_height="10dp"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:background="@color/color_grey"
-            android:orientation="horizontal"
-            android:paddingBottom="5dp"
-            android:paddingTop="@dimen/size_small_5">
-            <LinearLayout
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:background="@color/color_grey"
-                android:layout_marginLeft="10dp"
-                android:orientation="vertical"
-                android:layout_weight="0.2">
-
-                <TextView
-                    style="@style/textItem"
-                    android:text="5"
-                    android:textSize="@dimen/size_small_24"
-                    android:layout_marginTop="@dimen/Spacing_medium_32"
-                    />
-                <TextView
-                    android:text="Рейтинг"
-                    style="@style/textItem"
-                    />
-            </LinearLayout>
-            <View
-                android:layout_width="1dp"
-                android:layout_height="100dp"
-                android:background="@color/color_white"
-                android:layout_marginTop="1dp"
-                android:layout_marginBottom="@dimen/size_small_24"/>
-            <LinearLayout
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:orientation="vertical"
-                android:layout_weight="0.6">
-                <TextView
-                    style="@style/textItem"
-                    android:text="5"
-                    android:textSize="@dimen/size_small_24"
-                    android:layout_marginTop="@dimen/Spacing_medium_32"
-                    />
-                <TextView
-                    android:text="Написано строк кода"
-                    style="@style/textItem"
-                    />
-            </LinearLayout>
-            <View
-                android:layout_width="2dp"
-                android:layout_height="100dp"
-                android:background="@color/color_white"
-                android:layout_marginTop="1dp"
-                android:layout_marginBottom="@dimen/size_small_24"/>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:orientation="vertical"
-                android:layout_weight="0.6">
-                <TextView
-                    style="@style/textItem"
-                    android:text="6"
-                    android:textSize="@dimen/size_small_24"
-                    android:layout_marginTop="@dimen/Spacing_medium_32"
-                    />
-                <TextView
-                    android:text="Проектов"
-                    style="@style/textItem"
-                    />
-            </LinearLayout>
-        </LinearLayout>
-    </android.support.design.widget.AppBarLayout>
-        <!-- *******************************************************************************************-->
-        <LinearLayout
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_layout"
+            android:theme="@style/AppTheme.AppBarOverlay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="@dimen/Spacing_small_8">
-            <ImageView
-                style="@style/icon.Left"
-                android:src="@drawable/ic_call_black_24dp"/>
+            android:background="@color/color_primary">
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="@color/color_primary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-            <LinearLayout
-                style="@style/mainLayout">
-                <android.support.design.widget.TextInputLayout
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <EditText
-                        style="@style/editTextItem"
+                    android:layout_height="@dimen/profile_image_size"
+                    android:fitsSystemWindows="true">
+                    <ImageView
+                        android:id="@+id/user_photo_img"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Мобильный телефон"
-                        android:text="@string/MyPhone"
-                        android:inputType="textWebEmailAddress"/>
-                </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
+                        android:layout_height="@dimen/profile_image_size"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/user_foto"/>
+                    <RelativeLayout
+                        android:id="@+id/profile_placeholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_gray_background"
+                        android:visibility="gone">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_profile.placeholder.image"
+                            android:textColor="@color/color_white"
+                            android:fontFamily="sans-serif-medium"
+                            android:layout_centerHorizontal="true"
 
-            <ImageView
-                style="@style/icon.Right"
-                android:src="@drawable/ic_phone_in_talk_black_24dp"/>
-        </LinearLayout>
+                            android:layout_marginBottom="@dimen/spacing_small_8"/>
+                        <ImageView
+                            android:id="@+id/photo_placeholder"
+                            android:layout_width="@dimen/placeholder_photo_size90"
+                            android:layout_height="@dimen/placeholder_photo_size90"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/add_a_photo_48px"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="@dimen/spacing_large_56"/>
+                    </RelativeLayout>
+                </FrameLayout>
 
 
-        <!-- *******************************************************************************************-->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@color/color_grey"
-            android:layout_marginLeft="@dimen/Spacing_larger_72"/>
-        <LinearLayout
-            android:layout_width="match_parent"
+
+                <android.support.v7.widget.Toolbar
+                    android:theme="@style/AppTheme.PopupOverlay"
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:titleTextColor="@color/color_white"
+                    app:layout_collapseMode = "pin"/>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <include layout="@layout/user_profile_content"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="@dimen/Spacing_small_8"
-            android:layout_marginBottom="@dimen/Spacing_small_8">
-            <ImageView
-                style="@style/icon.Left"
-                android:src="@drawable/ic_mail_black_24dp"/>
-
-            <LinearLayout
-                style="@style/mainLayout">
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <EditText
-                        style="@style/editTextItem"
-                        android:layout_width="320dp"
-                        android:layout_height="wrap_content"
-                        android:hint="E-mail"
-                        android:text="@string/email"
-                        android:inputType="textWebEmailAddress"/>
-                </android.support.design.widget.TextInputLayout>
-            </LinearLayout>
-
-            <ImageView
-                style="@style/icon.Right"
-                android:src="@drawable/ic_send_black_24dp"/>
-        </LinearLayout>
-
-
-
-<!--************************************************************************-->
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:background="@color/color_grey"
-                    android:layout_marginLeft="@dimen/Spacing_larger_72"/>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="@dimen/Spacing_small_8"
-                    android:layout_marginBottom="@dimen/Spacing_small_8">
-                    <ImageView
-                        style="@style/icon.Left"
-                        android:src="@drawable/ic_vk"/>
-
-                    <LinearLayout
-                        style="@style/mainLayout">
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-                            <EditText
-                                style="@style/editTextItem"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="Профиль в VK"
-                                android:text="@string/vk"
-                                android:inputType="textWebEmailAddress"/>
-                        </android.support.design.widget.TextInputLayout>
-                    </LinearLayout>
-
-                    <ImageView
-                        style="@style/icon.Right"
-                        android:src="@drawable/ic_visibility_black_24dp"/>
-            </LinearLayout>
-
-
-<!-- *******************************************************************************************-->
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:background="@color/color_grey"
-                    android:layout_marginLeft="@dimen/Spacing_larger_72"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="@dimen/Spacing_small_8"
-                    android:layout_marginBottom="@dimen/Spacing_small_8">
-                    <ImageView
-                        style="@style/icon.Left"
-                        android:src="@drawable/ic_github_circle"/>
-
-                    <LinearLayout
-                        style="@style/mainLayout">
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp">
-                            <EditText
-                                style="@style/editTextItem"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="Репозиторий"
-                                android:text="@string/Github"
-                                android:inputType="textMultiLine"/>
-                        </android.support.design.widget.TextInputLayout>
-                    </LinearLayout>
-
-                    <ImageView
-                        style="@style/icon.Right"
-                        android:src="@drawable/ic_visibility_black_24dp"/>
-
-                </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:background="@color/color_grey"
-                    android:layout_marginLeft="@dimen/Spacing_larger_72"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="@dimen/Spacing_small_8"
-                    android:layout_marginBottom="@dimen/Spacing_small_8">
-                    <ImageView
-                        style="@style/icon.Left"
-                        android:src="@drawable/ic_account_box_black_24dp"/>
-
-                    <LinearLayout
-                        style="@style/mainLayout">
-                        <android.support.design.widget.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                            <EditText
-                                style="@style/editTextItem"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:inputType="textMultiLine"
-                                android:lines="20"
-                                android:hint="О себе"
-                                android:text="@string/information"
-                                ></EditText>
-                        </android.support.design.widget.TextInputLayout>
-                    </LinearLayout>
-                </LinearLayout>
-
-
-
-
-</LinearLayout>
-</LinearLayout>
-           </android.support.v4.widget.NestedScrollView>
-           <android.support.design.widget.FloatingActionButton
-               android:id="@+id/fab"
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:src="@drawable/ic_create_black_24dp"
-               app:layout_anchor="@id/appbar_layout"
-               app:layout_anchorGravity="bottom|right"
-               android:layout_marginRight="20dp"/>
-
-       </android.support.design.widget.CoordinatorLayout>
-
-
-<android.support.design.widget.NavigationView
-    android:id="@+id/navigation_view"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="left"
-    app:headerLayout="@layout/drawer_header"
-    app:menu="@menu/drawer_menu">
-
-</android.support.design.widget.NavigationView>
-
+            android:src="@drawable/ic_create_black_24dp"
+            app:layout_anchor="@id/appbar_layout"
+            app:layout_anchorGravity="bottom|right"
+            android:layout_marginRight="@dimen/fab_right_space"/>
+    </android.support.design.widget.CoordinatorLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_menu"
+        >
+    </android.support.design.widget.NavigationView>
 </android.support.v4.widget.DrawerLayout>
