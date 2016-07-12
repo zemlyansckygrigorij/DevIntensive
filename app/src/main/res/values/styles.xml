@@ -32,10 +32,7 @@
     <style name="custom_dialog">
         <item name="android:fullDark">@android:color/transparent</item>
     </style>
-   <!-- <style name="icon">
-        <item name="android:layout_width">@dimen/size_small_24</item>
-        <item name="android:layout_height">@dimen/size_small_24</item>
-    </style>-->
+
     <style name="icon.Left" parent="icon">
         <item name="android:layout_gravity">top|left</item>
         <item name="android:layout_marginTop">@dimen/Spacing_medial_24</item>

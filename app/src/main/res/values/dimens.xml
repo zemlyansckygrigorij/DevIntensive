@@ -85,6 +85,5 @@
     <dimen name="button_height">32dp</dimen>
     <dimen name="line_size">2dp</dimen>
     <dimen name="size_largest">104dp</dimen>
-
     <dimen name="placeholder_photo_size90">90dp</dimen>
 </resources>
